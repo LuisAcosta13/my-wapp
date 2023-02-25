@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    min-height: 100vh;
+}
+
+.first{
+    width: 70%;
+}
+
+.second{
+    width: 100%;
+    background: green;
+}

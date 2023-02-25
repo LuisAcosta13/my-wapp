@@ -1,0 +1,157 @@
+.options{
+    display: flex;
+    justify-content: space-between;
+    background-color: #202c33;
+    color: rgba(255, 255, 255, 0.719);
+}
+
+.profileIcon{
+    padding: 3%;
+    padding-top: 4%;
+}
+
+.icons{
+    display: flex;
+    justify-content: flex-end;
+    width: 55%;
+    padding-top: 1%;
+    padding-right: 0%;
+}
+
+.eachIcon{
+    padding: 5%;
+    padding-right: 9%;
+}
+
+.eachIcon:hover{
+    cursor: pointer;
+}
+
+.input_container{
+    display: flex;
+    padding: 2%;
+    background-color: #111b21;
+}
+
+.input_subcontainer{
+    display: flex;
+    width: 90%;
+    height: 40px;
+    background-color: #202c33;
+    border: none;
+    border-radius: 7px;
+    color: rgba(255, 255, 255, 0.719)
+}
+
+.search_icon, .arrow_icon{
+    padding-top: 1.5%;
+    padding-left: 2%;
+}
+
+.arrow_icon{
+    color: #00a884;
+}
+
+.input{
+    width: 90%;
+    height: 37px;
+    padding-left: 5%;
+    background-color: #202c3300;
+    border: none;
+    border-radius: 7px;
+    outline: none;
+    word-wrap: break-word;
+}
+
+.input::placeholder{
+    padding-left: 2%;
+    color: #d1d7db;
+}
+
+.input:focus{
+    color: rgb(255, 255, 255);
+}
+
+.filter_button, .contact_button{
+    display: none;
+}
+
+.filter{
+    padding-left: 3%;
+    padding-top: 1%;
+    color: rgba(255, 255, 255, 0.719);
+    background-color: none;
+}
+
+.filter_icon{
+    width: 99%;
+    height: 65%;
+    padding: 12%;
+}
+
+.filter_icon:hover{
+    cursor: pointer;
+}
+
+.filter_button:checked + .filter_icon{
+    background-color: #00a884;
+    border-radius: 100%;
+    background-size: contain;
+}
+
+.contact_list{
+    background-color:#111b21;
+    overflow-y: scroll;
+}
+
+div::-webkit-scrollbar {
+    width: 8px; 
+}
+  
+.div::-webkit-scrollbar-track {
+    background-color: rgb(56, 56, 56);
+}
+  
+div::-webkit-scrollbar-thumb {
+    background-color: rgba(78, 78, 78, 0.92);
+    border: 0px solid rgb(56, 56, 56);
+}
+
+.contact_label{
+    display: flex;
+    height: 80px;
+    color:#d1d7db;
+    font: inherit;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact_label:hover{
+    cursor: pointer;
+    background-color: #d1d7db1e;
+}
+
+.contact_icon{
+    width: 20%;
+    height: 120%;
+    padding-top: 5%;
+}
+
+.contact_name_container{
+    width: 79%;
+    border-top: solid 1px rgba(101, 101, 101, 0.192)
+}
+
+.contact_name{
+    display: flex;
+    justify-content: flex-start;
+    padding: 3%;
+    padding-left: 0;
+    font-weight: 10;
+    font-size: large;
+}
+
+.contact_button:checked + .contact_label{
+    background-color: #00a884;
+    border-radius: 100%;
+    background-size: contain;
+}
