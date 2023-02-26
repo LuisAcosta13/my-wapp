@@ -115,6 +115,6 @@ div::-webkit-scrollbar-thumb {
     color: rgb(255, 255, 255);
 }
 
-.mic_icon{
-
+.each_icon_chat:hover{
+    cursor: pointer;
 }

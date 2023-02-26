@@ -53,7 +53,7 @@ const Chat: React.FunctionComponent = () => {
                         
                 </div>
                 <div className={style.mic_icon}>
-                    <span>{keyboardVoiceIcon}</span>
+                    <span className={style.each_icon_chat}>{keyboardVoiceIcon}</span>
                 </div>
             </div>
         </div>
