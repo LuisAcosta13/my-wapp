@@ -1,3 +1,15 @@
+.container{
+    height: 100%;
+    position: fixed;
+    width: 40%;
+}
+
+.navbar{
+    position: 'sticky';
+    top: 0;
+    z-index: 10;
+}
+
 .options{
     display: flex;
     justify-content: space-between;
@@ -8,6 +20,9 @@
 .profileIcon{
     padding: 3%;
     padding-top: 4%;
+}
+.profileIcon:hover{
+    cursor: pointer;
 }
 
 .icons{
@@ -50,6 +65,10 @@
 
 .arrow_icon{
     color: #00a884;
+}
+
+.arrow_icon:hover{
+    cursor: pointer;
 }
 
 .input{
@@ -99,9 +118,18 @@
     background-size: contain;
 }
 
+.contact_container{
+    height: 100%;
+    background-color:#111b21;
+}
+
 .contact_list{
     background-color:#111b21;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 80%;
 }
 
 div::-webkit-scrollbar {
@@ -119,10 +147,10 @@ div::-webkit-scrollbar-thumb {
 
 .contact_label{
     display: flex;
-    height: 80px;
     color:#d1d7db;
     font: inherit;
     font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0;
 }
 
 .contact_label:hover{
@@ -130,14 +158,20 @@ div::-webkit-scrollbar-thumb {
     background-color: #d1d7db1e;
 }
 
+.contact{
+    display: flex;
+    width: 100%;
+}
+
 .contact_icon{
-    width: 20%;
-    height: 120%;
+    width: 13%;
     padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .contact_name_container{
-    width: 79%;
+    width: 82%;
     border-top: solid 1px rgba(101, 101, 101, 0.192)
 }
 
@@ -145,13 +179,20 @@ div::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: flex-start;
     padding: 3%;
+    padding-bottom: 2%;
     padding-left: 0;
     font-weight: 10;
     font-size: large;
 }
 
-.contact_button:checked + .contact_label{
-    background-color: #00a884;
-    border-radius: 100%;
+.contact_message{
+    display: flex;
+    padding-bottom: 3%;
+    font-weight: lighter;
+    color:#6e848f
+}
+
+.contact_button:checked + .contact{
+    background-color: #d1d7db1e;
     background-size: contain;
 }

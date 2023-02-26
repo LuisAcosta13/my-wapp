@@ -1,13 +1,17 @@
 .container{
     display: flex;
-    min-height: 100vh;
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
 }
 
 .first{
-    width: 70%;
+    width: 40%;
+    border-right: solid 0.1px rgba(37, 37, 37, 0.838)
 }
 
 .second{
-    width: 100%;
-    background: green;
+    width: 60%;
 }

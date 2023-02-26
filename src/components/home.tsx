@@ -1,14 +1,28 @@
 import style from './home.module.css'
 import Navbar from './navbar/navbar'
+import Chat from './chat/chat'
 
 const Home: React.FunctionComponent = () => {
+
+    const contacts = [ 
+        'Programando', 
+        'Juan', 
+        'María', 
+        'Bernardo', 
+        'Alejandro',
+        'Cristina', 
+        'Claudio', 
+        'Rosibel', 
+        'Mariano'
+    ]
+
     return(
         <div className={style.container}>
             <div className={style.first}>
-                <Navbar/>
+                <Navbar contacts={contacts}/>
             </div>
             <div className={style.second}>
-                <div>chat</div>
+                <Chat />
             </div>
         </div>
     )
